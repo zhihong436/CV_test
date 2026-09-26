@@ -1,0 +1,208 @@
+{
+  "seed": 20261001,
+  "source_ids": [
+    "55548",
+    "44480",
+    "12064",
+    "28175",
+    "30693",
+    "22268",
+    "20762",
+    "03227",
+    "29019",
+    "42688",
+    "15513",
+    "26180",
+    "49072",
+    "38087",
+    "09693",
+    "44821"
+  ],
+  "per_source": [
+    {
+      "source_id": "55548",
+      "payload_rate": 0.112872,
+      "changed_channels": 2772,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "44480",
+      "payload_rate": 0.219749,
+      "changed_channels": 5382,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "12064",
+      "payload_rate": 0.600605,
+      "changed_channels": 14762,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "28175",
+      "payload_rate": 0.257656,
+      "changed_channels": 6453,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "30693",
+      "payload_rate": 0.481879,
+      "changed_channels": 11945,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "22268",
+      "payload_rate": 0.635571,
+      "changed_channels": 15745,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "20762",
+      "payload_rate": 0.632936,
+      "changed_channels": 15501,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "03227",
+      "payload_rate": 0.76796,
+      "changed_channels": 18898,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "29019",
+      "payload_rate": 0.748277,
+      "changed_channels": 18354,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "42688",
+      "payload_rate": 0.367181,
+      "changed_channels": 9013,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "15513",
+      "payload_rate": 0.698105,
+      "changed_channels": 17203,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "26180",
+      "payload_rate": 0.419601,
+      "changed_channels": 10294,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "49072",
+      "payload_rate": 0.263676,
+      "changed_channels": 6405,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "38087",
+      "payload_rate": 0.414805,
+      "changed_channels": 10158,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "09693",
+      "payload_rate": 0.671055,
+      "changed_channels": 16417,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    },
+    {
+      "source_id": "44821",
+      "payload_rate": 0.752546,
+      "changed_channels": 18420,
+      "shape": [
+        128,
+        128,
+        3
+      ]
+    }
+  ],
+  "runtime": {
+    "python": "3.13.7",
+    "pytorch": "2.14.0+cu126",
+    "cuda_available": true,
+    "device": "cuda",
+    "data_root": "C:\\Users\\zhiho\\Desktop\\AI_stuff\\05_Projects\\School\\Computer Vision and Deep Learning - Term Project\\05_Data",
+    "dataset_run": "lsb-run-20260922-233255-728056",
+    "reference_image_size": [
+      128,
+      128
+    ],
+    "batch_size": 64,
+    "loss": "cross entropy",
+    "optimiser": "SGD",
+    "learning_rate": 0.01,
+    "momentum": 0.9,
+    "max_steps": 200
+  },
+  "path_checks": {
+    "train manifest": true,
+    "sources manifest": true,
+    "diagnostic 4-bit train manifest": true,
+    "diagnostic 1-bit train manifest": true
+  },
+  "problems": []
+}

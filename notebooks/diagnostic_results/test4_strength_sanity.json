@@ -1,0 +1,100 @@
+{
+  "embedding_rule": "seeded uniform selection over all H*W*3 RGB channel slots at the recorded per-source payload rate. The 4-bit condition replaces the lowest four bits with seeded payload values. The matched 1-bit control replaces the lowest bit with the lowest bit of the same seeded value at the same slots.",
+  "data_directory": "C:\\Users\\zhiho\\Desktop\\AI_stuff\\05_Projects\\School\\Computer Vision and Deep Learning - Term Project\\05_Data\\diagnostic-4bit",
+  "train_sources": 2000,
+  "val_sources": 500,
+  "conditions": {
+    "4-bit": {
+      "run_name": "4-bit",
+      "train_rows": 4000,
+      "val_rows": 1000,
+      "epochs": [
+        {
+          "epoch": 1,
+          "train_loss": 0.802895,
+          "train_accuracy": 0.501,
+          "val_loss": 0.693154,
+          "val_accuracy": 0.5,
+          "val_prediction_counts": {
+            "clean": 0,
+            "stego": 1000
+          }
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.693536,
+          "train_accuracy": 0.49675,
+          "val_loss": 0.693165,
+          "val_accuracy": 0.5,
+          "val_prediction_counts": {
+            "clean": 0,
+            "stego": 1000
+          }
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.693468,
+          "train_accuracy": 0.4965,
+          "val_loss": 0.693159,
+          "val_accuracy": 0.5,
+          "val_prediction_counts": {
+            "clean": 1000,
+            "stego": 0
+          }
+        }
+      ],
+      "final_train_accuracy": 0.4965,
+      "final_val_accuracy": 0.5,
+      "val_prediction_counts": {
+        "clean": 1000,
+        "stego": 0
+      }
+    },
+    "1-bit control": {
+      "run_name": "1-bit control",
+      "train_rows": 4000,
+      "val_rows": 1000,
+      "epochs": [
+        {
+          "epoch": 1,
+          "train_loss": 0.795544,
+          "train_accuracy": 0.5015,
+          "val_loss": 0.693216,
+          "val_accuracy": 0.5,
+          "val_prediction_counts": {
+            "clean": 54,
+            "stego": 946
+          }
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.694008,
+          "train_accuracy": 0.49925,
+          "val_loss": 0.693159,
+          "val_accuracy": 0.5,
+          "val_prediction_counts": {
+            "clean": 0,
+            "stego": 1000
+          }
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.693472,
+          "train_accuracy": 0.49625,
+          "val_loss": 0.693161,
+          "val_accuracy": 0.5,
+          "val_prediction_counts": {
+            "clean": 996,
+            "stego": 4
+          }
+        }
+      ],
+      "final_train_accuracy": 0.49625,
+      "final_val_accuracy": 0.5,
+      "val_prediction_counts": {
+        "clean": 996,
+        "stego": 4
+      }
+    }
+  }
+}

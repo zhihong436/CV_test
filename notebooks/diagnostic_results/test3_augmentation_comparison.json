@@ -1,0 +1,99 @@
+{
+  "train_rows": 10000,
+  "val_rows": 2000,
+  "train_sources": 5000,
+  "val_sources": 1000,
+  "subset_used": true,
+  "augmented": {
+    "run_name": "augmented",
+    "train_rows": 10000,
+    "val_rows": 2000,
+    "epochs": [
+      {
+        "epoch": 1,
+        "train_loss": 0.815153,
+        "train_accuracy": 0.501,
+        "val_loss": 0.694441,
+        "val_accuracy": 0.5,
+        "val_prediction_counts": {
+          "clean": 2000,
+          "stego": 0
+        }
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.693458,
+        "train_accuracy": 0.4968,
+        "val_loss": 0.693173,
+        "val_accuracy": 0.5,
+        "val_prediction_counts": {
+          "clean": 2000,
+          "stego": 0
+        }
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.693364,
+        "train_accuracy": 0.4995,
+        "val_loss": 0.693226,
+        "val_accuracy": 0.5,
+        "val_prediction_counts": {
+          "clean": 0,
+          "stego": 2000
+        }
+      }
+    ],
+    "final_train_accuracy": 0.4995,
+    "final_val_accuracy": 0.5,
+    "val_prediction_counts": {
+      "clean": 0,
+      "stego": 2000
+    }
+  },
+  "no_augmentation": {
+    "run_name": "no augmentation",
+    "train_rows": 10000,
+    "val_rows": 2000,
+    "epochs": [
+      {
+        "epoch": 1,
+        "train_loss": 0.773599,
+        "train_accuracy": 0.5012,
+        "val_loss": 0.694438,
+        "val_accuracy": 0.5,
+        "val_prediction_counts": {
+          "clean": 2000,
+          "stego": 0
+        }
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.69352,
+        "train_accuracy": 0.5006,
+        "val_loss": 0.693354,
+        "val_accuracy": 0.5,
+        "val_prediction_counts": {
+          "clean": 2000,
+          "stego": 0
+        }
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.693433,
+        "train_accuracy": 0.4938,
+        "val_loss": 0.693224,
+        "val_accuracy": 0.5,
+        "val_prediction_counts": {
+          "clean": 0,
+          "stego": 2000
+        }
+      }
+    ],
+    "final_train_accuracy": 0.4938,
+    "final_val_accuracy": 0.5,
+    "val_prediction_counts": {
+      "clean": 0,
+      "stego": 2000
+    }
+  }
+}
